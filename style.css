@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* For webkit */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.justify {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.adjust {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.navbar {
+    font-weight: 600;
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+}
+
+
+.navbar-content {
+    min-height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 35px;
+}
+
+
+.nav-logo {
+    margin-top: 20px;
+}
+
+.nav-logo img {
+    width: 150px;
+}
+
+.navbar-content ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-content li a {
+    text-decoration: none;
+    color: black;
+    padding-left: 30px;
+    padding-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-content li {
+    text-align: center;
+}
+
+.button {
+    width: 170px;
+    height: 35px;
+    background-color: purple;
+    border-radius: 15px;
+    color: white;
+    margin-top: 25px;
+    margin-left: 10px;
+    display: grid;
+    align-items: center;
+}
+
+.button a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.background-pic img {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    margin-top: 30px;
+}
+
+.background-text {
+    display: grid;
+    position: absolute;
+    color: white;
+    font-size: 70px;
+    display: grid;
+    top: 70%;
+    left: 60%;
+    right: 10%;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+
+.title {
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.text {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-us {
+    width: 100px;
+    height: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: purple;
+    border-radius: 30px;
+    margin-top: 50px;
+    display: grid;
+    align-items: center;
+}
+
+.about-us a {
+    text-decoration: none;
+    padding-left: 20px;
+    font-weight: bold;
+    color: purple;
+}
+
+.about-us:hover {
+    background-color: rgb(230, 116, 230);
+}
+
+
+.grid-1-by-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    column-gap: 4em;
+}
+
+.grid-4-by-1 {
+    display: grid;
+    row-gap: 2em;
+    justify-items: center;
+}
+
+.grid-form {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: transparent;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 3px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    height: 70px;
+    font-size: 30px;
+    background-color: transparent;
+}
+
+.container2 {
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+#message {
+    height: 300px;
+}
+
+.submit {
+    margin-bottom: 30px;
+}
+
+input[type=submit] {
+    background-color: purple;
+    color: white;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 35px;
+}
+
+footer {
+    background-color: rgb(22, 35, 29);
+    height: 300px;
+
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+
+}
+
+.navigation a {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact-info {
+    font-size: 20px;
+    color: white;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    column-gap: 0px;
+}
+
+
+.details {
+    display: grid;
+    justify-content: end;
+    text-align: right;
+    font-size: 20px;
+    color: white;
+}
+
+@media only screen and (max-width: 1660px) {
+    .grid-1-by-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar-content {
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+
+    .navbar-content ul li{
+        padding-left: 20px;
+    }
+
+    .background-pic img {
+        width: 100%;
+        height: 600px;
+    }
+
+    .background-text {
+        font-size: 35px;
+        top: 80%;
+    }
+
+    .content {
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+
+    footer {
+        background-color: rgb(22, 35, 29);
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    .navbar-content li a {
+        padding-left: 20px;
+        padding-right: 10px;
+        font-size: 10px;
+    }
+
+    .navigation a {
+        padding-left: 20px;
+        padding-right: 10px;
+        font-size: 10px;
+    }
+
+    .contact-info {
+        font-size: 15px;
+    }
+
+    .details {
+        font-size: 15px;
+    }
+
+
+    .background-pic img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .background-text {
+        font-size: 25px;
+        top: 80%;
+    }
+
+    .grid-4-by-1 img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .title{
+        font-size: 20px;
+    }
+
+    .text{
+        font-size: 15px;
+    }
+
+    .grid-4-by-1 p{
+        font-size: 12px;
+    }
+    .background-pic img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .background-text {
+        font-size: 20px;
+        top: 60%;
+        left: 50%;
+    }
+
+    .navbar-content li a {
+        font-size: 8px;
+    }
+
+    .navigation a {
+        font-size: 8px;
+    }
+
+    .details {
+        font-size: 12px;
+    }
+
+    .contact-info {
+        font-size: 12px;
+    }
+
+    input[type=text],
+    select,
+    textarea {
+        font-size: 20px;
+    }
+
+
+}
