@@ -5,143 +5,117 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,700;1,100;1,400;1,500;1,800&display=swap"
-        rel="stylesheet">
-    <!--CSS Link-->
-    <link rel="stylesheet" href="style.css" />
-    <!--<link rel="stylesheet" href="css/responsiveNavBar.css">-->
 
-    <title>Lift Women's foundation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Home</title>
 </head>
-<header>
-    <nav class="navbar">
-        <div class="navbar-content justify">
-            <a href="#index" class="nav-logo">
-                <img src="img/logo.png" alt="logo for Lift foundation">
-            </a>
-            <ul>
-                <li><a href="#HOME">HOME</a></li>
-                <li><a href="#ABOUT US">ABOUTUS</a></li>
-                <li><a href="#SERVICES">SERVICES</a></li>
-                <li><a href="#CONTACT US">CONTACTUS</a></li>
-                <li><a href="#DONATE">DONATE</a></li>
-            </ul>
-            <div class="button">
-                <a href="#isthisforme">IS THIS FOR ME?</a>
-            </div>
-        </div>
-    </nav>
-</header>
 
 <body>
+    <header>
+        <!--Navigation Bar-->
+        <nav class="navbar hide">
+            <div class="navcontent justify">
+                <a href="./index.html" class="nav-logo">
+                    <img src="./img/logo.png" alt="LIFT Foundation Colored Logo" />
+                </a>
+                <!--Hamburger section-->
+                <div class="burger navbar-toggle" id="js-navbar-toggle">
+                    <div class="l1"></div>
+                    <div class="l2"></div>
+                    <div class="l3"></div>
+                </div>
+                <!--End of Hamburger section-->
+
+                <!--Start of Navigation List-->
+                <ul class="mainnav list-style-remove" id="menu">
+                    <li><a href="index.html" class="navlink">Home</a></li>
+                    <li><a href="index.html" class="navlink">About Us</a></li>
+                    <li><a href="index.html" class="navlink">Services</a></li>
+                    <li><a href="index.html" class="navlink">Contact Us</a></li>
+                    <li><a href="index.html" class="navlink">Donate</a></li>
+                    <li>
+                        <a href="index.html" class="navlink button">Is This For Me?</a>
+                    </li>
+                </ul>
+                <!--End of Navigation List-->
+            </div>
+        </nav>
+
+        <!--Header background Image-->
+        <div class="header-container">
+            <img src="./img/header.jpg" alt="two women looking at each other in front of a city skyline" />
+            <div class="header-text">
+                <h1 class="header-tag-line normal">Supporting Women Businesses</h1>
+            </div>
+        </div>
+    </header>
     <main>
-        <div class="background-pic">
-            <img src="img/background.png">
-        </div>
-        <div class="background-text">
-            <p>Supporting <br> Women Businesses</p>
-        </div>
-        <div class="title">
-            LIFT WOMEN'S FOUNDATION
-        </div>
-        <div class="text justify adjust">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
-        </div>
-        <div class="about-us justify">
-            <a href="#aboutus">About us</a>
-        </div>
-        <div class="grid-1-by-2 justify adjust">
-            <div class="grid-4-by-1">
-                <div class="title">
-                    IS THIS FOR ME?
+        <section>
+            <h2>LIFT Women's Foundation</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+                numquam natus nulla non dolor doloribus asperiores dolorum tempora.
+                Tempora odit cum ratione? Recusandae nulla laboriosam et aliquid
+                veniam minus veritatis.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatum eaque laboriosam officiis
+                saepe modi soluta corporis officia harum atque, culpa, minima corrupti nulla eveniet optio vero ducimus?
+                Architecto, saepe!
+            </p>
+            <p><a href="./about.html" class="button">About Us</a></p>
+        </section>
+        <section class="two-columns-grid">
+            <div>
+                <h2>Is This For Me?</h2>
+                <div class="image-container">
+                    <img src="./img/pic1.png" alt="three women walking and laughing together" />
                 </div>
-                <img src="img/pic1.png">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea
-                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit
-                    anim id est laborum.</p>
-                <div class="button">
-                    <a href="#learnmore">Learn More</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione assumenda voluptates laudantium
+                    repudiandae nulla distinctio ab numquam nam repellat reiciendis, reprehenderit est voluptate quas
+                    molestiae nostrum hic culpa. Perspiciatis, itaque!
+                </p>
+                <p><a href="#LearnMore">Learn More</a></p>
+            </div>
+            <div>
+                <h2>Donate</h2>
+                <div class="image-container">
+                    <img src="./img/pic2.png" alt="three women walking and laughing together" />
                 </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione assumenda voluptates laudantium
+                    repudiandae nulla distinctio ab numquam nam repellat reiciendis, reprehenderit est voluptate quas
+                    molestiae nostrum hic culpa. Perspiciatis, itaque!
+                </p>
+                <p><a href="#LearnMore">Ways to give</a></p>
             </div>
-            <div class="grid-4-by-1">
-                <div class="title">
-                    DONATE
-                </div>
-                <img src="img/pic2.png">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea
-                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit
-                    anim id est laborum.</p>
-                <div class="button">
-                    <a href="#waystogive">Ways to give</a>
-                </div>
-            </div>
-        </div>
-        <div class="grid-form">
-            <div class="title">
-                JOIN US
-            </div>
-            <div class="container justify">
-                <form action="/action_page.php">
-                    <input type="text" id="name" name="name" placeholder="Full name:">
-                </form>
-                <form action="/action_page.php">
-                    <input type="text" id="email" name="email" placeholder="Email:">
-                </form>
-            </div>
-    
-            <div class="container2 justify">
-                <form action="/action_page.php">
-                    <textarea type="text" id="message" name="message" placeholder="Message:"></textarea>
-                </form>
-            </div>    
-            <div class="submit justify">
-                <form action="/action_page.php">
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-        </div>
-        
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+            <!--Add the Form here-->
+        </section>
     </main>
     <footer>
-        <div class="footer-bar">
-            <div class="content justify">
-                <a href="#index" class="nav-logo">
-                    <img src="img/logo.png" alt="logo for Lift foundation">
-                </a>
-                <div class="navigation">
-                    <a href="#HOME">HOME</a>
-                    <a href="#ABOUT US">ABOUTUS</a>
-                    <a href="#SERVICES">SERVICES</a>
-                    <a href="#CONTACT US">CONTACTUS</a>
-                    <a href="#DONATE">DONATE</a>
-                </div>
-                <div class="button">
-                    <a href="#isthisforme">IS THIS FOR ME?</a>
-                </div>
-            </div>
+        <div class="footernav navcontent justify">
+            <a href="./index.html" class="nav-logo">
+                <img src="./img/LiftWomensFoundation_White.png" alt="LIFT Foundation Colored Logo" />
+            </a>
+            <!--Start of Navigation List-->
+            <ul class="mainnav list-style-remove" id="menu">
+                <li><a href="index.html" class="navlink">Home</a></li>
+                <li><a href="index.html" class="navlink">About Us</a></li>
+                <li><a href="index.html" class="navlink">Services</a></li>
+                <li><a href="index.html" class="navlink">Contact Us</a></li>
+                <li><a href="index.html" class="navlink">Donate</a></li>
+                <li>
+                    <a href="index.html" class="navlink button">Is This For Me?</a>
+                </li>
+            </ul>
         </div>
-
         <div class="justify footer-grid">
             <div class="contact-info">
                 <p>(xxx)xxx-xxx</p>
@@ -150,8 +124,9 @@
             </div>
             <div class="details">
                 <p>Copyright 2022 Lift Women's Foundation</p>
-                <p>Website by Augustana Web Guild</p>
+                <p>Website by <a href="" target="_blank">Augustana Web Guild</a></p>
             </div>
+        </div>
     </footer>
 </body>
 

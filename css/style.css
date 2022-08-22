@@ -1,0 +1,13 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.normal {
+    text-transform: unset;
+}
