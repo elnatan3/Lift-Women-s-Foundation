@@ -1,13 +1,122 @@
-* {
-    font-family: 'Montserrat', sans-serif;
+:root {
+    --theme-purple: #9f74ad;
+    --secondary-background-color: #3f3f3f;
 }
 
-h1, h2, h3 {
-    font-family: 'DM Serif Display', serif;
-    font-style: italic;
-    text-transform: uppercase;
+* {
+  font-family: "Montserrat", sans-serif;
+  /* For webkit */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body, footer{
+  padding: 0;
+  margin: 0;
+}
+
+.justify {
+  max-width: 1476px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.adjust {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "DM Serif Display", serif;
+  font-style: italic;
+  text-transform: uppercase;
 }
 
 .normal {
-    text-transform: unset;
+  text-transform: unset;
+}
+
+.button {
+    background-color: var(--theme-purple);
+    color: white;
+    border-radius: 2em;
+    height: fit-content;
+}
+
+/*Navigation bar Style */
+.navbar {
+    width: 100%;
+}
+
+.navcontent {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+.nav-logo img {
+    padding: 40px 20px;
+    width: 300px;
+}
+
+.navcontent ul, .navcontent li {
+    padding: 0;
+    margin: 0;
+}
+
+.navcontent ul li {
+    list-style-type: none;
+}
+
+.mainnav li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.mainnav {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    justify-content: end;
+    align-items: center;
+}
+
+.navlink {
+    padding: 10px 20px;
+}
+
+/* Header background */
+.header-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    max-height: 980px;
+}
+
+.header-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.header-text {
+    position: absolute;
+    bottom: 6%;
+    right: 10%;
+    max-width: 700px;
+    font-size: 40px;
+    text-align: right;
+    color: white;
+}
+
+/* Footer Style */
+footer {
+    display: block;
+    background-color: var(--secondary-background-color);
+    color: white !important;
 }
