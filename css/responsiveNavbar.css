@@ -1,10 +1,5 @@
 :root {
-    --col1: #d64045;
-    --col2: #e9fff9;
-    --col3: #9ed8db;
-    --col4: #467599;
-    --col5: #1d3354;
-    --height-of-navbar: 186.48px;
+    --theme-purple: #9f74ad;
   }
   /* Navigation bar */
   .burger {
@@ -12,11 +7,10 @@
     cursor: pointer;
     padding: 8.5px 4px;
     z-index: 10;
-    background-color: var(--col3);
     border-radius: 10px;
   }
   .burger div {
-    background-color: var(--col5);
+    background-color: var(--theme-purple);
     width: 30px;
     height: 2px;
     margin: 7px;
@@ -35,6 +29,9 @@
   @media screen and (max-width: 771px) {
     .mainnav {
       display: none;
+    }
+    .footernav .mainnav {
+      display: grid;
     }
     .burger {
       display: block;

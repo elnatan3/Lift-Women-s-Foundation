@@ -20,9 +20,9 @@
 <body>
     <header>
         <!--Navigation Bar-->
-        <nav class="navbar hide">
+        <nav class="navbar hide" id="navbar">
             <div class="navcontent justify">
-                <a href="./index.html" class="nav-logo">
+                <a href="./index.html" class="nav-logo" id="nav-logo">
                     <img src="./img/logo.png" alt="LIFT Foundation Colored Logo" />
                 </a>
                 <!--Hamburger section-->
@@ -56,8 +56,8 @@
             </div>
         </div>
     </header>
-    <main>
-        <section>
+    <main class="justify">
+        <section class="adjust intro">
             <h2>LIFT Women's Foundation</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
@@ -81,7 +81,7 @@
                     repudiandae nulla distinctio ab numquam nam repellat reiciendis, reprehenderit est voluptate quas
                     molestiae nostrum hic culpa. Perspiciatis, itaque!
                 </p>
-                <p><a href="#LearnMore">Learn More</a></p>
+                <p><a href="#LearnMore" class="button">Learn More</a></p>
             </div>
             <div>
                 <h2>Donate</h2>
@@ -92,14 +92,21 @@
                     repudiandae nulla distinctio ab numquam nam repellat reiciendis, reprehenderit est voluptate quas
                     molestiae nostrum hic culpa. Perspiciatis, itaque!
                 </p>
-                <p><a href="#LearnMore">Ways to give</a></p>
+                <p><a href="#LearnMore" class="button">Ways to give</a></p>
             </div>
         </section>
-        <section>
+        <section class="contact">
             <h2>Contact Us</h2>
+            <div class="iframe-container">
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLScm5CRLL02w140_bXYzbI7AR9YhiJE7jm7QnJksxdoUE7FAuw/viewform?embedded=true"
+                    class="responsive-iframe">Loading…</iframe>
+            </div>
             <!--Add the Form here-->
         </section>
     </main>
+    <script src="./js/whenScroll.js"></script>
+    <script src="./js/responsiveNavbar.js"></script>
     <footer>
         <div class="footernav navcontent justify">
             <a href="./index.html" class="nav-logo">
@@ -113,7 +120,7 @@
                 <li><a href="index.html" class="navlink">Contact Us</a></li>
                 <li><a href="index.html" class="navlink">Donate</a></li>
                 <li>
-                    <a href="index.html" class="navlink button">Is This For Me?</a>
+                    <a href="index.html" class="navlink">Is This For Me?</a>
                 </li>
             </ul>
         </div>
